@@ -1,0 +1,8 @@
+{
+  "name": "kameleon",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/cndonovan/kameleon#readme"
+}
