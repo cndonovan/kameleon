@@ -8,10 +8,11 @@ table {
   table-layout: fixed;
   text-align: center;
   color: #5a7321;
+  width: calc(min(100vw, 700px));
 }
 
 th {
-  padding: 24px;
+  padding: 20px;
   font-size: calc(10px + 2vmin);
 }
 
@@ -23,8 +24,10 @@ td {
 }
 
 td {
-  padding: 16px 24px;
+  padding: 16px calc(min(24px, 100vw / 40));
   font-size: calc(10px + 1vmin);
+  max-width: calc(100vw / 8);
+  word-break: normal;
 }
 
 /** 
