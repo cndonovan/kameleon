@@ -2,19 +2,21 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div
+      style={{
+        backgroundColor: "#e2ecb0",
+        minHeight: "100vh",
+      }}
+    >
+      <header
+        style={{
+          padding: "16px",
+          textAlign: "center",
+          color: "#df4380",
+          fontSize: `calc(10px + 2vmin)`,
+        }}
+      >
+        <h1>Kameleon</h1>
       </header>
     </div>
   );
