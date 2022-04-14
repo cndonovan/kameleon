@@ -3,7 +3,34 @@
   padding: 0;
 }
 
+table {
+  padding: 0 8px 8px 8px;
+  table-layout: fixed;
+  text-align: center;
+  color: #5a7321;
+}
+
+th {
+  padding: 24px;
+  font-size: calc(10px + 2vmin);
+}
+
+table,
+td {
+  border: 1px solid #5a7321;
+  border-collapse: collapse;
+  background: white;
+}
+
+td {
+  padding: 16px 24px;
+  font-size: calc(10px + 1vmin);
+}
+
 /** 
+Darker green
+#5a7321
+
 Dark green 
 #accf5b
 
