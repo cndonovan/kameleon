@@ -8,17 +8,12 @@ const GameStatusSection = ({ isStarted }) => {
   return (
     <div style={{ display: "flex", alignItems: "end" }}>
       {isStarted ? (
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <span style={{ marginRight: "8px" }}>{GAME_STARTED_COPY}... </span>
-          <button>End game</button>
-        </div>
+        <button>End game</button>
       ) : (
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <span style={{ marginRight: "8px" }}>
-            {GAME_NOT_STARTED_COPY}...{" "}
-          </span>
+        <>
+          <button>Join game</button>
           <button>Start game</button>
-        </div>
+        </>
       )}
     </div>
   );
