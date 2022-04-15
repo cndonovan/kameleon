@@ -4,7 +4,7 @@ import "./App.css";
 const NUM_ROWS = 4;
 const NUM_COLUMNS = 4;
 
-const TopicCard = ({ topicCard }) => {
+const TopicCard = ({ topicCard, secretWord }) => {
   let { name, examples } = topicCard;
   let rowIndices = [...Array(NUM_ROWS).keys()];
 
@@ -24,9 +24,17 @@ const TopicCard = ({ topicCard }) => {
           );
           return (
             <tr key={rowIndex}>
-              {examplesForRow.map((example) => (
-                <td key={example}>{example}</td>
-              ))}
+              {examplesForRow.map((example) => {
+                if (example === secretWord) {
+                  return (
+                    <td key={example} className="SecretWord">
+                      {example}
+                    </td>
+                  );
+                } else {
+                  return <td key={example}>{example}</td>;
+                }
+              })}
             </tr>
           );
         })}
